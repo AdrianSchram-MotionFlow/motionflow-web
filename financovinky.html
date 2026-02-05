@@ -192,8 +192,66 @@
 
             <div class="order-1 lg:order-2 flex flex-col gap-8 pb-10 lg:mr-auto max-w-lg w-full">
 
-                <div class="relative w-full self-start bg-white p-6 rounded-3xl shadow-card border border-zinc-50 group hover:-translate-y-1 transition duration-300">
-                    <div class="absolute top-2 right-5 text-6xl font-bold text-zinc-50 -z-10 group-hover:text-brand-bg transition-colors select-none">1</div>
-                    <h3 class="text-xl font-bold text-zinc-900 mb-2">Strategie & Skripty</h3>
-                    <p class="text-sm text-zinc-600 leading-relaxed">
-                        Nestačí jen zapnout kameru. Pro Filipa jsme připravovali témata, psali skripty a
+                <div class="relative w-full md:w-[90%] self-start bg-white p-6 rounded-3xl shadow-lg border border-zinc-200 group hover:-translate-y-1 transition duration-300">
+                    <div class="absolute top-2 right-5 text-6xl font-bold text-zinc-100 -z-10 group-hover:text-brand-bg transition-colors select-none">1</div>
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-bold text-zinc-900 mb-2">Strategie & Skripty</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Nestačí jen zapnout kameru. Pro Filipa jsme připravovali témata, psali skripty a hledali háčky, které udrží pozornost.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative w-full md:w-[90%] self-end bg-white p-6 rounded-3xl shadow-lg border border-zinc-200 group hover:-translate-y-1 transition duration-300">
+                    <div class="absolute top-2 right-5 text-6xl font-bold text-zinc-100 -z-10 group-hover:text-brand-bg transition-colors select-none">2</div>
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-bold text-zinc-900 mb-2">Full Produkce</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Studiová kvalita obrazu i zvuku. Filip je profík a jeho videa tak musí vypadat. Žádný šum, jen čistý content.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative w-full md:w-[90%] self-start bg-white p-6 rounded-3xl shadow-lg border border-zinc-200 group hover:-translate-y-1 transition duration-300">
+                    <div class="absolute top-2 right-5 text-6xl font-bold text-zinc-100 -z-10 group-hover:text-brand-bg transition-colors select-none">3</div>
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-bold text-zinc-900 mb-2">Post-produkce</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Dynamický střih, titulky, grafika. Vše vyladěné tak, aby to na TikToku a Reels fungovalo a nenudilo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative w-full md:w-[90%] self-end bg-white p-6 rounded-3xl shadow-lg border border-zinc-200 group hover:-translate-y-1 transition duration-300">
+                    <div class="absolute top-2 right-5 text-6xl font-bold text-zinc-100 -z-10 group-hover:text-brand-bg transition-colors select-none">4</div>
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-bold text-zinc-900 mb-2">Správa & Posting</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Konzistence je klíč. Starali jsme se o to, aby videa vycházela pravidelně a profil žil svým životem.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="lg:hidden flex justify-center mt-4 order-last">
+                <div class="w-full max-w-[300px] rounded-[2rem] overflow-hidden border-2 border-zinc-100">
+                    <video src="/video/detskytabor.mp4" controls class="w-full aspect-[9/16] object-cover"></video>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<script>
+    fetch('/footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('global-footer').innerHTML = data;
+        });
+</script>
+
+</body>
+</html>
