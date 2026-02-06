@@ -247,7 +247,7 @@
 <footer id="global-footer" class="bg-white pb-10 px-4"></footer>
 
 <script>
-    fetch('/footer.html')
+    fetch('/public/footer.html')
         .then(res => res.text())
         .then(data => {
             document.getElementById('global-footer').innerHTML = data;
