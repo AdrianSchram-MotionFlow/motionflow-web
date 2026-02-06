@@ -26,12 +26,12 @@
     </div>
 </nav>
 
-<main class="pt-40 pb-20 overflow-hidden">
+<main class="pt-40 overflow-hidden">
     <div class="fixed top-0 left-0 w-[800px] h-[800px] bg-brand-bg rounded-full blur-3xl -z-10 -translate-x-1/2 -translate-y-1/2 opacity-60"></div>
 
     <header class="text-center mb-24 px-4">
         <h1 class="text-5xl md:text-8xl font-bold leading-tight text-zinc-900">
-            Live <span class="font-script text-brand text-6xl md:text-9xl block mt-2">Events</span>
+            Live <span class="font-script text-brand-primary text-6xl md:text-9xl block mt-2">Events</span>
         </h1>
         <p class="text-xl text-zinc-500 max-w-xl mx-auto font-light mt-6">
             Zachytíme atmosféru vaší akce tak, aby ji diváci chtěli zažít znovu.
@@ -91,8 +91,9 @@
     </section>
 </main>
 
-<footer id="global-footer" class="w-full m-0 p-0">
+<footer id="global-footer" class="w-full m-0 p-0 -mt-20 relative z-10">
 </footer>
+
 <script>
     fetch('/footer.txt')
         .then(res => res.text())
