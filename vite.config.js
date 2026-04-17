@@ -12,6 +12,7 @@ export default defineConfig({
                 klucizprahy: resolve(__dirname, 'klucizprahy.html'),
                 eventy: resolve(__dirname, 'eventy.html'),
                 reality: resolve(__dirname, 'reality.html'),
+                socialEstate: resolve(__dirname, 'social-estate.html')
             },
         },
     },
