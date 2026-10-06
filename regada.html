@@ -20,13 +20,13 @@
 <nav class="fixed top-0 left-0 w-full z-50 bg-brand-bg/90 backdrop-blur-md border-b border-brand-dark/10 transition-all duration-300">
     <div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
 
-        <a href="index.html" class="hover:opacity-80 transition block w-32 md:w-40">
+        <a href="/index.html" class="hover:opacity-80 transition block w-32 md:w-40">
             <img src="/img/MotionFlowNew_nobg.png" alt="MotionFlow Logo" class="w-full h-auto">
         </a>
 
         <div class="hidden md:flex items-center gap-8 font-semibold text-sm tracking-wide">
-            <a href="index.html#case-studies" class="text-brand-dark hover:text-brand-primary transition">Case Studies</a>
-            <a href="index.html#proces" class="text-brand-dark hover:text-brand-primary transition">Proces</a>
+            <a href="/index.html#case-studies" class="text-brand-dark hover:text-brand-primary transition">Case Studies</a>
+            <a href="/index.html#proces" class="text-brand-dark hover:text-brand-primary transition">Proces</a>
             <a href="#kontakt" class="bg-brand-dark text-brand-bg px-6 py-3 rounded-lg hover:bg-brand-secondary transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-300">
                 Domluvte si konzultaci (30 min)
             </a>
@@ -67,8 +67,8 @@
             </div>
 
             <div class="flex justify-center lg:justify-start lg:mr-auto w-full">
-                <!-- Rámeček změněn z max-w-xl na max-w-[340px], protože video je vertikální (9:16) -->
-                <div class="relative w-full max-w-[340px]">
+                <!-- Zmenšená max-šířka videa (z 340px na 280px) pro lepší vizuální balanc s nadpisem -->
+                <div class="relative w-full max-w-[280px]">
                     <div class="absolute -top-8 -right-8 font-script text-brand-primary text-5xl rotate-6 z-10 hidden md:block opacity-90 drop-shadow-sm">B2B Průmysl</div>
                     <div class="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-brand-bg transform rotate-2 hover:rotate-0 transition duration-500 bg-brand-dark/5">
                         <video
@@ -113,7 +113,6 @@
                     <p>
                         Jak prodat průmyslové servopohony pro kritickou infrastrukturu? Rozhodně ne tancem na TikToku, ale ukázkou stabilní expertízy a reálného zázemí firmy.
                     </p>
-                    <!-- Přepsaný odstavec, zní to mnohem víc jako člověk z praxe -->
                     <p>
                         V komunikaci jsme se proto zaměřili na to, co nákupčí a inženýry skutečně zajímá – vlastní vývoj (R&D), produkci přímo ve slévárně a náročné bezpečnostní certifikace (ATEX, ISO). Místo prázdných marketingových frází ukazujeme fakta. To je přesně ten obsah, na který B2B segment slyší.
                     </p>
@@ -178,8 +177,9 @@
 
             </div>
 
-            <div class="hidden lg:block lg:sticky lg:top-32 h-fit lg:mr-auto pl-8">
-                <div class="relative w-full max-w-[340px] rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-brand-bg">
+            <!-- Na velkých displejích (lg:block) přidáno mt-24, takže se video posune zhruba doprostřed sekce -->
+            <div class="hidden lg:block lg:sticky lg:top-32 mt-24 h-fit lg:mr-auto pl-8">
+                <div class="relative w-full max-w-[300px] rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-brand-bg">
                     <video
                             src="/video/04%20Box-moving%20lb.mp4"
                             autoplay
