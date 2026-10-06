@@ -67,15 +67,19 @@
             </div>
 
             <div class="flex justify-center lg:justify-start lg:mr-auto w-full">
-                <!-- Zmenšená max-šířka videa (z 340px na 280px) pro lepší vizuální balanc s nadpisem -->
+                <!-- Zmenšená max-šířka videa (280px) pro lepší vizuální balanc -->
                 <div class="relative w-full max-w-[280px]">
-                    <div class="absolute -top-8 -right-8 font-script text-brand-primary text-5xl rotate-6 z-10 hidden md:block opacity-90 drop-shadow-sm">B2B Průmysl</div>
                     <div class="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-brand-bg transform rotate-2 hover:rotate-0 transition duration-500 bg-brand-dark/5">
                         <video
                                 src="/video/03%20Gears%20lb.mp4"
                                 controls
                                 class="w-full aspect-[9/16] object-cover">
                         </video>
+                    </div>
+                    <!-- PŘIDANÁ HIGHLIGHT KARTIČKA NA 1. VIDEO -->
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 w-max bg-brand-bg/95 backdrop-blur px-5 py-3 rounded-xl shadow-lg border border-brand-dark/10">
+                        <p class="text-[10px] text-brand-primary font-bold uppercase tracking-widest text-center mb-1">B2B Průmysl</p>
+                        <p class="text-brand-dark font-bold text-sm">Globální dosah</p>
                     </div>
                 </div>
             </div>
@@ -97,6 +101,7 @@
                                 class="w-full aspect-[9/16] object-cover">
                         </video>
                     </div>
+                    <!-- TAHLE KARTIČKA TU BYLA -->
                     <div class="absolute bottom-6 left-1/2 -translate-x-1/2 w-max bg-brand-bg/95 backdrop-blur px-5 py-3 rounded-xl shadow-lg border border-brand-dark/10">
                         <p class="text-[10px] text-brand-primary font-bold uppercase tracking-widest text-center mb-1">Edukace</p>
                         <p class="text-brand-dark font-bold text-sm">Průmyslová Technika</p>
@@ -177,27 +182,33 @@
 
             </div>
 
-            <!-- Na velkých displejích (lg:block) přidáno mt-24, takže se video posune zhruba doprostřed sekce -->
-            <div class="hidden lg:block lg:sticky lg:top-32 mt-24 h-fit lg:mr-auto pl-8">
-                <div class="relative w-full max-w-[300px] rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-brand-bg">
+            <!-- Na velkých displejích přidáno lg:mt-12 pro jemný odstup, video má teď max-w-[280px] a je centrované pomocí mx-auto -->
+            <div class="hidden lg:block lg:sticky lg:top-32 lg:mt-12 h-fit w-full">
+                <div class="relative w-full max-w-[280px] mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-brand-bg">
                     <video
                             src="/video/04%20Box-moving%20lb.mp4"
                             autoplay
                             loop
                             muted
                             playsinline
-                            class="w-full aspect-[9/16] object-cover">
+                            class="w-full aspect-[9/16] object-cover bg-brand-dark/5">
                     </video>
-                    <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-brand-dark/90 to-transparent text-brand-bg pt-20">
-                        <p class="text-[10px] font-bold opacity-80 uppercase tracking-widest mb-1 text-brand-primary">Výsledek</p>
-                        <h3 class="text-2xl font-bold leading-tight">Autorita na trhu</h3>
+                    <!-- PŘIDANÁ HIGHLIGHT KARTIČKA MÍSTO GRADIENTU NA SPODKU -->
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 w-max bg-brand-bg/95 backdrop-blur px-5 py-3 rounded-xl shadow-lg border border-brand-dark/10">
+                        <p class="text-[10px] text-brand-primary font-bold uppercase tracking-widest text-center mb-1">Výsledek</p>
+                        <p class="text-brand-dark font-bold text-sm">Autorita na trhu</p>
                     </div>
                 </div>
             </div>
 
             <div class="lg:hidden flex justify-center mt-8">
-                <div class="w-full max-w-[300px] rounded-[2rem] overflow-hidden shadow-xl border-4 border-brand-bg">
-                    <video src="/video/04%20Box-moving%20lb.mp4" autoplay loop muted playsinline class="w-full aspect-[9/16] object-cover"></video>
+                <div class="relative w-full max-w-[280px] rounded-[2rem] overflow-hidden shadow-xl border-4 border-brand-bg">
+                    <video src="/video/04%20Box-moving%20lb.mp4" autoplay loop muted playsinline class="w-full aspect-[9/16] object-cover bg-brand-dark/5"></video>
+                    <!-- Mobilní verze kartičky -->
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 w-max bg-brand-bg/95 backdrop-blur px-5 py-3 rounded-xl shadow-lg border border-brand-dark/10">
+                        <p class="text-[10px] text-brand-primary font-bold uppercase tracking-widest text-center mb-1">Výsledek</p>
+                        <p class="text-brand-dark font-bold text-sm">Autorita na trhu</p>
+                    </div>
                 </div>
             </div>
 
@@ -210,7 +221,7 @@
 </footer>
 
 <script>
-    fetch('/footer.txt?v=3')
+    fetch('/footer.txt?v=4')
         .then(res => res.text())
         .then(data => {
             document.getElementById('global-footer').innerHTML = data;
