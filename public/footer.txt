@@ -1,19 +1,23 @@
-<footer id="kontakt" class="bg-brand-dark text-white py-20 px-4 mt-20">
+<footer id="kontakt" class="bg-brand-dark text-brand-bg py-20 px-4 mt-20">
     <div class="max-w-6xl mx-auto text-center relative z-10">
-        <!-- Masterpiece je teď inline, takže se nezalomí na nový řádek -->
-        <h2 class="text-4xl md:text-6xl font-bold mb-8">Spojte se s námi a společně vytvoříme <span class="font-script text-brand-light font-bold drop-shadow-md">Masterpiece!</span></h2>
+        <h2 class="text-4xl md:text-6xl font-bold mb-8 text-brand-bg">Spojte se s námi a společně vytvoříme <span class="font-script text-brand-primary font-bold drop-shadow-md">Masterpiece!</span></h2>
 
-        <div class="mt-12 flex justify-center">
-            <!-- Tady je ten bílý čtvereček s černým textem uvnitř tmavého footeru -->
-            <div class="bg-white p-8 rounded-3xl flex flex-col xl:flex-row items-center gap-6 shadow-2xl max-w-2xl w-full">
-                <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-brand-light shadow-lg shrink-0">
+        <!-- Nové B2B CTA Tlačítko -->
+        <div class="mb-16">
+            <a href="mailto:adrian@motionflow.cz" class="inline-block px-8 py-4 bg-brand-primary text-brand-dark font-bold rounded-xl hover:bg-brand-bg transition shadow-lg transform hover:-translate-y-1 active:scale-95 duration-200 text-lg">
+                Začít projekt s MotionFlow
+            </a>
+        </div>
+
+        <div class="flex justify-center">
+            <div class="bg-brand-bg p-8 rounded-3xl flex flex-col xl:flex-row items-center gap-6 shadow-2xl max-w-2xl w-full">
+                <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-brand-primary shadow-lg shrink-0">
                     <img src="/img/Navrh-bez-nazvu-1.png" alt="Adrian Schram" class="w-full h-full object-cover">
                 </div>
                 <div class="text-center xl:text-left">
-                    <!-- Texty uvnitř jsou tmavé (zinc-900) -->
-                    <h3 class="text-2xl font-bold mb-1 text-zinc-900">Adrian Schram</h3>
-                    <p class="text-[10px] md:text-xs font-black uppercase tracking-widest text-brand-dark bg-brand-light/30 inline-block px-3 py-1 rounded-full mb-4">Video Producent & Zakladatel</p>
-                    <div class="flex flex-col gap-2 text-md text-zinc-600">
+                    <h3 class="text-2xl font-bold mb-1 text-brand-dark">Adrian Schram</h3>
+                    <p class="text-[10px] md:text-xs font-black uppercase tracking-widest text-brand-dark bg-brand-primary/30 inline-block px-3 py-1 rounded-full mb-4">Video Producent & Zakladatel</p>
+                    <div class="flex flex-col gap-2 text-md text-brand-dark/80">
                         <a href="tel:+420776898960" class="hover:text-brand-primary transition font-semibold">📞 +420 776 898 960</a>
                         <a href="mailto:adrian@motionflow.cz" class="hover:text-brand-primary transition">✉️ adrian@motionflow.cz</a>
                         <a href="https://instagram.com/adrian.schram" target="_blank" class="hover:text-brand-primary transition">📸 @adrian.schram</a>
@@ -22,7 +26,7 @@
             </div>
         </div>
 
-        <div class="mt-16 pt-8 border-t border-white/20 text-white/60 text-sm">
+        <div class="mt-16 pt-8 border-t border-brand-bg/20 text-brand-bg/60 text-sm">
             &copy; 2026 MotionFlow. All Rights Reserved.
         </div>
     </div>

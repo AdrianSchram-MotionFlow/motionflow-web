@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="cs" class="scroll-smooth">
+<html lang="cs" class="scroll-smooth h-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case Study: REGADA | MotionFlow</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Great+Vibes&display=swap" rel="stylesheet">
     <script type="module" src="/src/main.js"></script>
     <style>
         ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #fff; }
-        ::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #d1d5db; }
+        ::-webkit-scrollbar-track { background: #FBF9F6; }
+        ::-webkit-scrollbar-thumb { background: #D1DDD1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #A8BFA8; }
     </style>
 </head>
-<body class="bg-white text-zinc-900 font-sans antialiased selection:bg-brand-light selection:text-white">
+<body class="bg-brand-bg text-brand-dark font-sans antialiased selection:bg-brand-primary selection:text-brand-dark overflow-x-hidden">
 
-<nav class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-zinc-100 transition-all duration-300">
+<nav class="fixed top-0 left-0 w-full z-50 bg-brand-bg/90 backdrop-blur-md border-b border-brand-dark/10 transition-all duration-300">
     <div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
 
         <a href="index.html" class="hover:opacity-80 transition block w-32 md:w-40">
@@ -25,10 +25,10 @@
         </a>
 
         <div class="hidden md:flex items-center gap-8 font-semibold text-sm tracking-wide">
-            <a href="index.html#case-studies" class="hover:text-brand-primary transition">Case Studies</a>
-            <a href="index.html#proces" class="hover:text-brand-primary transition">Proces</a>
-            <a href="#kontakt" class="bg-brand-dark text-white px-6 py-3 rounded-lg hover:bg-brand-primary transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-300">
-                Probrat projekt
+            <a href="index.html#case-studies" class="text-brand-dark hover:text-brand-primary transition">Case Studies</a>
+            <a href="index.html#proces" class="text-brand-dark hover:text-brand-primary transition">Proces</a>
+            <a href="#kontakt" class="bg-brand-dark text-brand-bg px-6 py-3 rounded-lg hover:bg-brand-secondary transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-300">
+                Domluvte si konzultaci (30 min)
             </a>
         </div>
 
@@ -37,31 +37,41 @@
 
 <main class="pt-40 pb-20 overflow-hidden">
 
-    <div class="fixed top-0 left-0 w-[800px] h-[800px] bg-brand-bg rounded-full blur-3xl -z-10 -translate-x-1/2 -translate-y-1/2 opacity-60"></div>
-    <div class="fixed bottom-0 right-0 w-[600px] h-[600px] bg-brand-bg rounded-full blur-3xl -z-10 translate-x-1/3 translate-y-1/3 opacity-60"></div>
+    <div class="fixed top-0 left-0 w-[800px] h-[800px] bg-brand-primary/10 rounded-full blur-[100px] -z-10 -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="fixed bottom-0 right-0 w-[600px] h-[600px] bg-brand-primary/10 rounded-full blur-[100px] -z-10 translate-x-1/3 translate-y-1/3"></div>
 
     <section class="max-w-6xl mx-auto px-6 mb-32">
-        <div class="grid lg:grid-cols-2 gap-8 items-center">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
 
             <div class="space-y-6 lg:text-left max-w-lg lg:ml-auto">
-                <h1 class="text-5xl md:text-7xl font-bold leading-tight text-zinc-900">
-                    Case Study <br>
-                    <span class="font-script text-brand text-6xl md:text-8xl block mt-2">REGADA</span>
+                <div class="inline-block px-4 py-1 rounded-full border border-brand-primary text-brand-dark text-xs font-bold tracking-widest uppercase mb-2 bg-brand-primary/10">
+                    Edukační B2B Série
+                </div>
+                
+                <h1 class="text-6xl md:text-8xl font-black tracking-tight leading-none text-brand-dark">
+                    REGADA
                 </h1>
-                <p class="text-xl text-zinc-600 leading-relaxed font-light">
-                    Slovenský strojírenský gigant s globálním dosahem. Pomáháme jim překládat složité <strong class="text-zinc-900 font-semibold">technické know-how do moderního obsahu.</strong>
+                
+                <p class="text-xl text-brand-dark/80 leading-relaxed font-medium">
+                    Slovenský strojírenský gigant s globálním dosahem. Pomáháme jim překládat složité <strong class="text-brand-dark">technické know-how do moderního obsahu.</strong>
                 </p>
-                <p class="text-lg text-zinc-500">
-                    Průmyslová automatizace a servopohony nejsou nuda. Přetavili jsme jejich expertízu a R&D inovace do úderného B2B marketingu, který edukuje trh.
+                <p class="text-lg text-brand-dark/70">
+                    Průmyslová automatizace a servopohony jsou vysoce technický obor. Naším úkolem bylo přetavit jejich in-house expertízu a R&D inovace do úderného B2B marketingu, který edukuje trh a buduje důvěru u nákupčích.
                 </p>
+
+                <div class="pt-4">
+                    <a href="https://www.linkedin.com/company/regada/" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-brand-dark hover:text-brand-primary transition border-b-2 border-brand-primary pb-1">
+                        Prohlédnout profil na LinkedIn ↗
+                    </a>
+                </div>
             </div>
 
             <div class="flex justify-center lg:justify-start lg:mr-auto w-full">
                 <div class="relative w-full max-w-xl">
-                    <div class="absolute -top-8 -right-4 font-script text-brand text-4xl rotate-12 z-10 hidden md:block">B2B Průmysl</div>
-                    <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform rotate-1 hover:rotate-0 transition duration-500 bg-zinc-100">
+                    <div class="absolute -top-8 -right-4 font-script text-brand-primary text-5xl rotate-6 z-10 hidden md:block opacity-90 drop-shadow-sm">B2B Průmysl</div>
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-brand-bg transform rotate-1 hover:rotate-0 transition duration-500 bg-brand-dark/5">
                         <video
-                                src="/video/Praha4web.mp4"
+                                src="/video/03%20Gears%20lb%20wide.mp4"
                                 controls
                                 class="w-full aspect-video object-cover">
                         </video>
@@ -73,48 +83,48 @@
     </section>
 
     <section class="max-w-6xl mx-auto px-6 mb-32">
-        <div class="grid lg:grid-cols-2 gap-8 items-center">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
 
             <div class="order-2 lg:order-1 flex justify-center lg:justify-end lg:ml-auto relative group w-full">
-                <div class="absolute -inset-4 bg-zinc-100 rounded-[2.5rem] -z-10 -rotate-3 group-hover:-rotate-1 transition duration-500 w-full max-w-[320px] lg:mr-0 mx-auto"></div>
+                <div class="absolute -inset-4 bg-brand-primary/20 rounded-[2.5rem] -z-10 -rotate-3 group-hover:-rotate-1 transition duration-500 w-full max-w-[320px] lg:mr-0 mx-auto"></div>
 
                 <div class="relative w-full max-w-[300px]">
-                    <div class="rounded-[2rem] overflow-hidden shadow-soft bg-white border border-zinc-100">
+                    <div class="rounded-[2rem] overflow-hidden shadow-xl border-4 border-brand-bg bg-brand-dark/5">
                         <video
-                                src="/video/Chataweb.mp4"
+                                src="/video/01%20Aluminum%20Foundry%20lb.mp4"
                                 controls
                                 class="w-full aspect-[9/16] object-cover">
                         </video>
                     </div>
-                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 w-max bg-white/90 backdrop-blur px-4 py-2 rounded-xl shadow-lg border border-white/50">
-                        <p class="text-xs text-brand font-bold uppercase tracking-wider text-center">Edukace</p>
-                        <p class="text-zinc-900 font-bold text-sm">Průmyslová Technika</p>
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 w-max bg-brand-bg/95 backdrop-blur px-5 py-3 rounded-xl shadow-lg border border-brand-dark/10">
+                        <p class="text-[10px] text-brand-primary font-bold uppercase tracking-widest text-center mb-1">Edukace</p>
+                        <p class="text-brand-dark font-bold text-sm">Průmyslová Technika</p>
                     </div>
                 </div>
             </div>
 
             <div class="order-1 lg:order-2 space-y-6 max-w-lg lg:mr-auto">
-                <h2 class="text-4xl font-bold text-zinc-900">
-                    Složitý produkt <span class="font-script text-brand text-5xl ml-2">srozumitelně</span>
+                <h2 class="text-4xl font-bold text-brand-dark leading-tight">
+                    Složitý produkt <br><span class="font-script text-brand-primary text-6xl">srozumitelně</span>
                 </h2>
 
-                <div class="space-y-4 text-lg text-zinc-600 leading-relaxed">
+                <div class="space-y-4 text-lg text-brand-dark/80 leading-relaxed">
                     <p>
-                        Jak prodat průmyslové servopohony pro kritickou infrastrukturu? Ne tancem na TikToku, ale ukázkou nekompromisní expertízy a in-house vývoje.
+                        Jak prodat průmyslové servopohony pro kritickou infrastrukturu? Rozhodně ne tancem na TikToku, ale ukázkou stabilní expertízy a in-house vývoje.
                     </p>
                     <p>
-                        Přesunuli jsme důraz na jejich největší sílu – špičkové R&D, vlastní slévárnu a extrémní bezpečnostní certifikace (ATEX, ISO). Tenhle obsah buduje okamžitou důvěru u inženýrů a B2B nákupčích na světovém trhu.
+                        Přesunuli jsme důraz na jejich největší sílu – špičkové R&D, vlastní slévárnu a přísné bezpečnostní certifikace (ATEX, ISO). Tento typ obsahu rezonuje a buduje okamžitou důvěru u inženýrů a B2B partnerů na světovém trhu.
                     </p>
                 </div>
 
-                <div class="grid grid-cols-2 gap-4 pt-2">
-                    <div class="p-4 bg-zinc-50 rounded-2xl border border-zinc-100">
-                        <div class="text-2xl font-bold text-zinc-900">In-house R&D</div>
-                        <div class="text-xs text-zinc-500 uppercase tracking-wide">Vývoj a certifikace</div>
+                <div class="grid grid-cols-2 gap-4 pt-4">
+                    <div class="p-5 bg-brand-primary/10 rounded-2xl border border-brand-primary/20">
+                        <div class="text-xl font-bold text-brand-dark mb-1">In-house R&D</div>
+                        <div class="text-[10px] text-brand-dark/60 uppercase tracking-widest font-semibold">Vývoj a certifikace</div>
                     </div>
-                    <div class="p-4 bg-zinc-50 rounded-2xl border border-zinc-100">
-                        <div class="text-2xl font-bold text-zinc-900">B2B Konverze</div>
-                        <div class="text-xs text-zinc-500 uppercase tracking-wide">Obsah pro inženýry</div>
+                    <div class="p-5 bg-brand-primary/10 rounded-2xl border border-brand-primary/20">
+                        <div class="text-xl font-bold text-brand-dark mb-1">B2B Konverze</div>
+                        <div class="text-[10px] text-brand-dark/60 uppercase tracking-widest font-semibold">Obsah pro inženýry</div>
                     </div>
                 </div>
             </div>
@@ -123,69 +133,69 @@
 
     <section class="max-w-6xl mx-auto px-6 relative">
 
-        <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold mb-1">Efektivní <span class="font-script text-brand text-5xl">spolupráce</span></h2>
-            <p class="text-zinc-500 text-sm">Jak šetříme čas exportérovi a zajišťujeme špičkový výstup.</p>
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-2 text-brand-dark">Efektivní <span class="font-script text-brand-primary text-6xl">spolupráce</span></h2>
+            <p class="text-brand-dark/70 text-lg font-medium">Jak šetříme čas exportérovi a zajišťujeme špičkový výstup.</p>
         </div>
 
-        <div class="grid lg:grid-cols-2 gap-8 items-start">
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
 
-            <div class="flex flex-col gap-8 pb-10 lg:ml-auto max-w-lg w-full">
+            <div class="flex flex-col gap-6 lg:ml-auto max-w-lg w-full">
 
-                <div class="relative w-full self-start bg-white p-6 rounded-3xl shadow-card border border-zinc-50 group hover:-translate-y-1 transition duration-300">
-                    <div class="absolute top-2 right-5 text-6xl font-bold text-zinc-50 -z-10 group-hover:text-brand-bg transition-colors select-none">1</div>
-                    <h3 class="text-xl font-bold text-zinc-900 mb-2">Zaškolení týmu</h3>
-                    <p class="text-sm text-zinc-600 leading-relaxed">
-                        Nehrajeme si na nepostradatelné. V červnu jsme přijeli na Slovensko a zaškolili interní tým REGADA, jak si správně natočit materiál. Šetříme jim tak cestovní náklady a zrychlujeme proces.
+                <div class="relative w-full bg-brand-bg p-8 rounded-3xl shadow-sm border border-brand-dark/5 hover:border-brand-primary/30 transition duration-300 group">
+                    <div class="absolute top-4 right-6 text-6xl font-black text-brand-primary/10 group-hover:text-brand-primary/20 transition-colors select-none">1</div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Zaškolení týmu</h3>
+                    <p class="text-sm text-brand-dark/80 leading-relaxed">
+                        Nehrajeme si na nepostradatelné. Přijeli jsme na Slovensko a osobně zaškolili interní tým REGADA, jak si správně natočit materiál. Šetříme jim tak cestovní náklady a radikálně zrychlujeme proces.
                     </p>
                 </div>
 
-                <div class="relative w-full self-end bg-white p-6 rounded-3xl shadow-card border border-zinc-50 group hover:-translate-y-1 transition duration-300">
-                    <div class="absolute top-2 right-5 text-6xl font-bold text-zinc-50 -z-10 group-hover:text-brand-bg transition-colors select-none">2</div>
-                    <h3 class="text-xl font-bold text-zinc-900 mb-2">Technický Scripting</h3>
-                    <p class="text-sm text-zinc-600 leading-relaxed">
-                        Měsíčně připravujeme scénáře pro 4 edukační Reels. Převádíme složité technické parametry do úderného copy, které udrží pozornost a zdůrazní klíčové hodnoty produktu.
+                <div class="relative w-full bg-brand-bg p-8 rounded-3xl shadow-sm border border-brand-dark/5 hover:border-brand-primary/30 transition duration-300 group">
+                    <div class="absolute top-4 right-6 text-6xl font-black text-brand-primary/10 group-hover:text-brand-primary/20 transition-colors select-none">2</div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Jasné scénáře</h3>
+                    <p class="text-sm text-brand-dark/80 leading-relaxed">
+                        Měsíčně připravujeme koncepty pro 4 edukační B2B Reels. Převádíme složité technické parametry do úderného obsahu, který udrží pozornost a zdůrazní klíčové hodnoty produktu.
                     </p>
                 </div>
 
-                <div class="relative w-full self-start bg-white p-6 rounded-3xl shadow-card border border-zinc-50 group hover:-translate-y-1 transition duration-300">
-                    <div class="absolute top-2 right-5 text-6xl font-bold text-zinc-50 -z-10 group-hover:text-brand-bg transition-colors select-none">3</div>
-                    <h3 class="text-xl font-bold text-zinc-900 mb-2">Precizní Postprodukce</h3>
-                    <p class="text-sm text-zinc-600 leading-relaxed">
+                <div class="relative w-full bg-brand-bg p-8 rounded-3xl shadow-sm border border-brand-dark/5 hover:border-brand-primary/30 transition duration-300 group">
+                    <div class="absolute top-4 right-6 text-6xl font-black text-brand-primary/10 group-hover:text-brand-primary/20 transition-colors select-none">3</div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Precizní Postprodukce</h3>
+                    <p class="text-sm text-brand-dark/80 leading-relaxed">
                         Klient natočí materiál dle instrukcí a nasdílí na cloud. My dodáme čistý, dynamický střih a profi grafiku, která nadnárodního exportéra důstojně reprezentuje.
                     </p>
                 </div>
 
-                <div class="relative w-full self-end bg-white p-6 rounded-3xl shadow-card border border-zinc-50 group hover:-translate-y-1 transition duration-300">
-                    <div class="absolute top-2 right-5 text-6xl font-bold text-zinc-50 -z-10 group-hover:text-brand-bg transition-colors select-none">4</div>
-                    <h3 class="text-xl font-bold text-zinc-900 mb-2">Krok před konkurencí</h3>
-                    <p class="text-sm text-zinc-600 leading-relaxed">
-                        Každý měsíc analyzujeme, jak obsah funguje a společně vizuál i tonalitu iterujeme. V B2B průmyslu je kvalitní video obrovská konkurenční výhoda.
+                <div class="relative w-full bg-brand-bg p-8 rounded-3xl shadow-sm border border-brand-dark/5 hover:border-brand-primary/30 transition duration-300 group">
+                    <div class="absolute top-4 right-6 text-6xl font-black text-brand-primary/10 group-hover:text-brand-primary/20 transition-colors select-none">4</div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Neustálé zlepšování</h3>
+                    <p class="text-sm text-brand-dark/80 leading-relaxed">
+                        Každý měsíc vyhodnocujeme, jak obsah funguje a společně vylepšujeme formu. V B2B průmyslu je kvalitní, stabilní prezentace obrovská konkurenční výhoda.
                     </p>
                 </div>
 
             </div>
 
             <div class="hidden lg:block lg:sticky lg:top-32 h-fit lg:mr-auto pl-8">
-                <div class="relative w-full max-w-lg rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                <div class="relative w-full max-w-[340px] rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-brand-bg">
                     <video
-                            src="/video/Praha4web.mp4"
+                            src="/video/04%20Box-moving%20lb.mp4"
                             autoplay
                             loop
                             muted
                             playsinline
-                            class="w-full aspect-video object-cover">
+                            class="w-full aspect-[9/16] object-cover">
                     </video>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white pt-12">
-                        <p class="text-xs font-bold opacity-80 uppercase tracking-widest mb-1 text-brand-light">Výsledek</p>
-                        <h3 class="text-xl font-bold leading-tight">Autorita na trhu</h3>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-brand-dark/90 to-transparent text-brand-bg pt-20">
+                        <p class="text-[10px] font-bold opacity-80 uppercase tracking-widest mb-1 text-brand-primary">Výsledek</p>
+                        <h3 class="text-2xl font-bold leading-tight">Autorita na trhu</h3>
                     </div>
                 </div>
             </div>
 
-            <div class="lg:hidden flex justify-center mt-4">
-                <div class="w-full max-w-lg rounded-2xl overflow-hidden shadow-lg border-2 border-zinc-100">
-                    <video src="/video/Praha4web.mp4" autoplay loop muted playsinline class="w-full aspect-video object-cover"></video>
+            <div class="lg:hidden flex justify-center mt-8">
+                <div class="w-full max-w-[300px] rounded-[2rem] overflow-hidden shadow-xl border-4 border-brand-bg">
+                    <video src="/video/04%20Box-moving%20lb.mp4" autoplay loop muted playsinline class="w-full aspect-[9/16] object-cover"></video>
                 </div>
             </div>
 
@@ -198,7 +208,7 @@
 </footer>
 
 <script>
-    fetch('/footer.txt')
+    fetch('/footer.txt?v=3')
         .then(res => res.text())
         .then(data => {
             document.getElementById('global-footer').innerHTML = data;
