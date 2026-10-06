@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MotionFlow - Budujeme značky skrz video</title>
+    <title>MotionFlow - B2B Videoprodukce pro inovativní firmy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
-<body class="bg-brand-bg text-zinc-900 font-sans antialiased selection:bg-brand-primary selection:text-white overflow-x-hidden">
+<body class="bg-brand-bg text-brand-dark font-sans antialiased selection:bg-brand-primary selection:text-brand-dark overflow-x-hidden">
 
-<nav class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-zinc-100 transition-all duration-300">
+<nav class="fixed top-0 left-0 w-full z-50 bg-brand-bg/90 backdrop-blur-md border-b border-brand-dark/10 transition-all duration-300">
     <div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
 
         <a href="/index.html" class="hover:opacity-80 transition block w-32 md:w-40">
@@ -18,11 +18,10 @@
         </a>
 
         <div class="hidden md:flex items-center gap-8 font-semibold text-sm tracking-wide">
-            <a href="index.html#reference" class="hover:text-brand-primary transition">Reference</a>
-            <a href="index.html#proces" class="hover:text-brand-primary transition">Proces</a>
-            <a href="index.html#balicky" class="hover:text-brand-primary transition">Balíčky</a>
-            <a href="#kontakt" class="bg-brand-dark text-white px-6 py-3 rounded-lg hover:bg-brand-primary transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-300">
-                Napiš Nám!
+            <a href="index.html#case-studies" class="text-brand-dark hover:text-brand-primary transition">Case Studies</a>
+            <a href="index.html#proces" class="text-brand-dark hover:text-brand-primary transition">Proces</a>
+            <a href="#kontakt" class="bg-brand-dark text-brand-bg px-6 py-3 rounded-lg hover:bg-brand-secondary transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-300">
+                Domluvte si konzultaci (30 min)
             </a>
         </div>
 
@@ -32,245 +31,214 @@
     <header class="relative py-20">
 
         <div class="absolute inset-0 pointer-events-none -z-10">
-            <svg class="absolute -left-20 -top-20 w-96 h-96 md:w-[600px] md:h-[600px] text-[#9d5c63]/10 transform -translate-x-1/4 -translate-y-1/4 rotate-12" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Vyměnil jsem text-emerald-700/10 za text-brand-dark/10 -->
+            <svg class="absolute -left-20 -top-20 w-96 h-96 md:w-[600px] md:h-[600px] text-brand-dark/10 transform -translate-x-1/4 -translate-y-1/4 rotate-12" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" d="M44.7,-76.4C58.9,-69.2,71.8,-59.1,79.6,-46.3C87.4,-33.5,90.1,-18,87.6,-3.3C85.1,11.4,77.4,25.3,68.2,37.6C59,49.9,48.3,60.6,35.9,67.3C23.5,74,9.4,76.7,-3.6,73.1C-16.6,69.5,-28.5,59.6,-39.8,49.7C-51.1,39.8,-61.8,29.9,-68.8,17.4C-75.8,4.9,-79.1,-10.2,-74.6,-23.4C-70.1,-36.6,-57.8,-47.9,-45.3,-55.8C-32.8,-63.7,-20.1,-68.2,-6.1,-67.2C7.9,-66.2,22,-79.8,30.5,-83.6L44.7,-76.4Z" transform="translate(100 100)" />
             </svg>
 
-            <svg class="absolute right-0 bottom-0 w-72 h-72 md:w-[500px] md:h-[500px] text-[#9d5c63]/10 transform translate-x-1/4 translate-y-1/4 -rotate-12" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Vyměnil jsem text-emerald-700/10 za text-brand-dark/10 -->
+            <svg class="absolute right-0 bottom-0 w-72 h-72 md:w-[500px] md:h-[500px] text-brand-dark/10 transform translate-x-1/4 translate-y-1/4 -rotate-12" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" d="M39.9,-65.7C50.8,-57.6,58.3,-44.6,64.2,-31.2C70.1,-17.8,74.4,-4,72.7,9.3C71,22.6,63.3,35.4,53.4,45.2C43.5,55,31.4,61.8,18.8,65.6C6.2,69.4,-6.9,70.2,-19.8,66.8C-32.7,63.4,-45.4,55.8,-55.4,45.3C-65.4,34.8,-72.7,21.4,-73.8,7.5C-74.9,-6.4,-69.8,-20.8,-60.7,-32.3C-51.6,-43.8,-38.5,-52.4,-25.9,-59.3C-13.3,-66.2,-1.2,-71.4,11.5,-71.1C24.2,-70.8,32,-73.8,39.9,-65.7Z" transform="translate(100 100)" />
             </svg>
         </div>
 
         <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
-            <h1 class="text-5xl md:text-7xl font-black text-zinc-900 mb-2 leading-tight">
-                Budujeme značky <br>
-                <span class="font-script text-brand-primary text-6xl md:text-8xl font-bold block mt-2 transform -rotate-2 drop-shadow-sm">skrz video</span>
+            <!-- text-zinc-900 změněno na text-brand-dark pro prémiovější look -->
+            <h1 class="text-5xl md:text-7xl font-black text-brand-dark mb-2 leading-tight">
+                Z videa děláme <br>
+                <!-- Změněno na text-brand-primary pro kontrast -->
+                <span class="font-script text-brand-primary text-6xl md:text-8xl font-bold block mt-2 transform -rotate-2 drop-shadow-sm">byznysové aktivum</span>
             </h1>
-            <p class="text-lg text-gray-600 max-w-xl mx-auto mt-6 mb-10 leading-relaxed font-medium">
-                Tvoříme high-end content pro <strong>personal brandy</strong> a <strong>adventure travel</strong>.
-                Od nápadu až po virální zásah.
+            <p class="text-lg text-brand-dark/80 max-w-xl mx-auto mt-8 mb-10 leading-relaxed font-medium">
+                Specializovaná videoprodukce pro inovativní B2B firmy a tech společnosti.
+                Edukujeme trh, budujeme prémiový branding a konvertujeme diváky v klienty.
             </p>
 
-            <div class="animate-bounce text-brand-primary opacity-50">
+            <a href="#kontakt" class="inline-block px-8 py-4 bg-brand-dark text-brand-bg font-bold rounded-xl hover:bg-brand-secondary transition shadow-xl hover:shadow-2xl transform hover:-translate-y-1 active:scale-95 duration-200 text-lg">
+                Domluvte si konzultaci (30 min)
+            </a>
+
+            <div class="animate-bounce text-brand-dark/50 mt-12">
                 ↓
             </div>
         </div>
     </header>
 
-    <section id="reference" class="max-w-7xl mx-auto px-4 pb-24 relative z-10" x-data="{
-        activeSlide: 0,
-        slides: [
-            {
-                title: 'Liptovský Mikuláš',
-                tag: 'TRAVEL & DESTINATION',
-                desc: 'Rekord v Himalájích & virální promo regionu.',
-                color: 'bg-blue-900',
-                link: '/liptov.html',
-                video: '/video/Lukasuvodni.mp4'
-            },
-            {
-                title: 'Financovinky',
-                tag: 'PERSONAL BRAND',
-                desc: 'Škálování na 130k+ views v nudném odvětví.',
-                color: 'bg-emerald-900',
-                link: '/financovinky.html',
-                video: '/video/filipuvodni.mp4'
-            },
-            {
-                title: 'Kluci z Prahy',
-                tag: 'YOUTUBE PRODUCTION',
-                desc: 'Střih pro jeden z nejsledovanějších CZ kanálů.',
-                color: 'bg-orange-900',
-                link: '/klucizprahy.html',
-                video: '/video/kzpuvodni.mp4'
-            },
-            {
-                title: 'MIDZU Studio',
-                tag: 'Personal Brand & Coaching',
-                desc: 'Krása v autentickém focení.',
-                color: 'bg-pink-900',
-                link: '/midzu.html',
-                video: '/video/MIDZU-highlights.mp4'
-            },
-            {
-                title: 'Eventy & Konference',
-                tag: 'EVENTY & KONFERENCE',
-                desc: 'Aftermovies a reels pro eventy a konference.',
-                color: 'bg-purple-900',
-                link: '/eventy.html',
-                video: '/video/maturakhighlights.mp4'
-            },
-            {
-                title: 'Reality',
-                tag: 'Realitní videa',
-                desc: 'Videa co prodávají nemovitosti.',
-                color: 'bg-purple-900',
-                link: '/social-estate.html',
-                video: '/video/Praha4web.mp4'
-            }
-        ]
-    }">
-        <div class="mb-8 px-2 text-center md:text-left">
-            <h2 class="text-3xl md:text-5xl font-bold text-zinc-900 leading-tight">Ukázka naší <span class="font-script text-brand-primary text-5xl md:text-6xl ml-1 font-bold">práce</span></h2>
-        </div>
+    <section id="case-studies" class="py-24 bg-brand-bg relative overflow-hidden">
 
-        <div class="relative w-full aspect-square md:aspect-[21/9] bg-black rounded-3xl overflow-hidden shadow-2xl group border-2 md:border-4 border-white/50 z-20">
-
-            <button @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1"
-                    class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-30 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-white/10 backdrop-blur-md rounded-full text-white border border-white/20 hover:bg-white hover:text-brand-dark transition duration-300 opacity-40 md:opacity-0 md:group-hover:opacity-100">
-                ←
-            </button>
-            <button @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1"
-                    class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-30 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-white/10 backdrop-blur-md rounded-full text-white border border-white/20 hover:bg-white hover:text-brand-dark transition duration-300 opacity-40 md:opacity-0 md:group-hover:opacity-100">
-                →
-            </button>
-
-            <template x-for="(slide, index) in slides" :key="index">
-                <div x-show="activeSlide === index"
-                     x-transition:enter="transition ease-out duration-700"
-                     x-transition:enter-start="opacity-0 scale-95"
-                     x-transition:enter-end="opacity-100 scale-100"
-                     x-transition:leave="transition ease-in duration-300"
-                     x-transition:leave-start="opacity-100 scale-100"
-                     x-transition:leave-end="opacity-0 scale-105"
-                     class="absolute inset-0 w-full h-full flex items-center justify-center p-6 md:p-10 text-center text-white origin-center bg-black">
-
-                    <video class="absolute inset-0 w-full h-full object-cover opacity-50" autoplay muted loop playsinline>
-                        <source :src="slide.video" type="video/mp4">
-                    </video>
-
-                    <div class="z-10 max-w-2xl relative">
-                        <span class="inline-block px-3 py-1 border border-white/30 rounded-full text-[10px] md:text-xs font-bold tracking-widest mb-4 md:mb-6 backdrop-blur-sm uppercase" x-text="slide.tag"></span>
-                        <h3 class="text-3xl md:text-6xl font-black mb-2 md:mb-4 drop-shadow-lg leading-tight" x-text="slide.title"></h3>
-                        <p class="text-sm md:text-xl text-white/90 mb-6 md:mb-8 font-medium drop-shadow-md line-clamp-2 md:line-clamp-none" x-text="slide.desc"></p>
-                        <a :href="slide.link" class="inline-block px-6 py-3 md:px-8 md:py-4 bg-white text-brand-dark font-extrabold rounded-xl hover:bg-brand-primary hover:text-white transition shadow-lg hover:shadow-xl transform hover:-translate-y-1 active:scale-95 duration-200">
-                            Přehrát Case Study ▶
-                        </a>
-                    </div>
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/40 backdrop-blur-[1px]"></div>
-                </div>
-            </template>
-        </div>
-    </section>
-
-    <section id="balicky" class="py-24 bg-white relative overflow-hidden">
-
-        <svg class="absolute -right-20 top-0 w-[600px] h-[600px] text-brand-secondary/20 transform rotate-45 pointer-events-none -z-10" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <svg class="absolute -right-20 top-0 w-[600px] h-[600px] text-brand-primary/20 transform rotate-45 pointer-events-none -z-10" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <path fill="currentColor" d="M42.7,-72.8C54.6,-64.7,63.1,-50.4,70.8,-35.7C78.5,-21,85.4,-5.9,84.1,8.7C82.8,23.3,73.3,37.4,62.6,49.1C51.9,60.8,40,70.1,26.4,76.1C12.8,82.1,-2.5,84.8,-16.9,81.8C-31.3,78.8,-44.8,70.1,-56.3,58.8C-67.8,47.5,-77.3,33.6,-82.1,18.3C-86.9,3,-87,-13.7,-81.3,-28.6C-75.6,-43.5,-64.1,-56.6,-50.6,-64.1C-37.1,-71.6,-21.6,-73.5,-6.6,-72.4C8.4,-71.3,23.4,-67.3,42.7,-72.8Z" transform="translate(100 100)" />
         </svg>
-        <div class="absolute inset-0 bg-brand-primary/5 clip-path-slant -z-20"></div>
 
-        <div class="max-w-6xl mx-auto px-4 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
             <div class="text-center mb-20">
-                <h2 class="text-5xl md:text-6xl font-bold text-zinc-900">Naše <span class="font-script text-brand-primary text-7xl font-bold">Expertíza</span></h2>
-                <p class="text-gray-500 mt-4 text-lg max-w-2xl mx-auto">
-                    Děláme jen to, v čem jsme špička.
+                <h2 class="text-5xl md:text-6xl font-bold text-brand-dark">Case <span class="font-script text-brand-primary text-7xl font-bold">Studies</span></h2>
+                <p class="text-brand-dark/80 mt-4 text-lg max-w-2xl mx-auto font-medium">
+                    Podívejte se, jak řešíme konkrétní byznysové výzvy pro naše klienty.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8 items-center">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
 
-                <div class="bg-brand-bg/90 backdrop-blur-sm p-8 rounded-3xl border border-brand-primary/10 hover:shadow-xl transition duration-300 flex flex-col h-full order-2 md:order-1">
-                    <div class="mb-6 text-5xl">✨</div>
-                    <h3 class="text-2xl font-bold text-zinc-900 mb-3">Eventy & Konference</h3>
-                    <p class="text-gray-500 text-sm mb-8 leading-relaxed">
-                        Nudný záznam z kamery v rohu? Zapomeňte.
-                        Tvoříme aftermovies, které prodají feeling celé akce.
-                    </p>
+                <!-- Třída bg-brand-primary/30 pro "čtvereček stejnou barvou jako kruhy" (s ohledem na kontrast) -->
+                <!-- 1. Kluci z Prahy -->
+                <a href="/klucizprahy.html" class="bg-brand-primary/30 backdrop-blur-sm rounded-3xl border border-brand-dark/10 hover:shadow-2xl transition duration-300 flex flex-col h-full overflow-hidden group hover:bg-brand-primary/40">
+                    <div class="w-full aspect-video relative overflow-hidden bg-black">
+                        <video src="/video/kzpuvodni.mp4" autoplay loop muted playsinline class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 opacity-80 group-hover:opacity-100"></video>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <span class="text-xs font-bold uppercase tracking-widest text-brand-dark mb-2">Premium YouTube</span>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Kluci z Prahy</h3>
+                        <p class="text-brand-dark/80 text-sm leading-relaxed flex-grow">
+                            Stoprocentní spolehlivost a prémiové řemeslo. Zajištění postprodukce a dodržování striktních deadlinů pro jeden z největších YouTube kanálů v ČR.
+                        </p>
+                        <div class="pt-5 mt-5 border-t border-brand-dark/10 flex items-center justify-between text-brand-dark font-bold text-sm group-hover:text-brand-secondary transition">
+                            <span>Zobrazit Case Study</span>
+                            <span class="group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                    </div>
+                </a>
 
-                    <ul class="space-y-4 mb-8 text-gray-700 font-medium text-sm flex-grow">
-                        <li class="flex gap-3">🎉 <span><strong>High-end Aftermovies:</strong> Konference, Festivaly, Gala.</span></li>
-                        <li class="flex gap-3">🔊 <span><strong>Sound Design:</strong> Zvuk, který diktuje emoci.</span></li>
-                        <li class="flex gap-3">⚡ <span><strong>Dynamic Edit:</strong> Žádná nuda, čistá energie.</span></li>
-                    </ul>
+                <!-- 2. REGADA -->
+                <a href="/regada.html" class="bg-brand-primary/30 backdrop-blur-sm rounded-3xl border border-brand-dark/10 hover:shadow-2xl transition duration-300 flex flex-col h-full overflow-hidden group hover:bg-brand-primary/40">
+                    <div class="w-full aspect-video relative overflow-hidden bg-black">
+                        <video src="/video/03%20Gears%20lb%20wide.mp4" autoplay loop muted playsinline class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 opacity-80 group-hover:opacity-100"></video>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <span class="text-xs font-bold uppercase tracking-widest text-brand-dark mb-2">Edukační B2B Série</span>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3">REGADA</h3>
+                        <p class="text-brand-dark/80 text-sm leading-relaxed flex-grow">
+                            Jak prodat technický produkt? Přeložíme vaše složité know-how do srozumitelné řeči klientů. Budování masivní autority na trhu a LinkedInu přes short-form obsah.
+                        </p>
+                        <div class="pt-5 mt-5 border-t border-brand-dark/10 flex items-center justify-between text-brand-dark font-bold text-sm group-hover:text-brand-secondary transition">
+                            <span>Zobrazit Case Study</span>
+                            <span class="group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                    </div>
+                </a>
 
-                    <a href="#kontakt" class="block text-center py-3 rounded-xl border-2 border-brand-primary text-brand-primary font-bold hover:bg-brand-primary hover:text-white transition mt-auto">
-                        Chci Aftermovie
-                    </a>
-                </div>
+                <!-- 3. Liptovský Mikuláš -->
+                <a href="/liptov.html" class="bg-brand-primary/30 backdrop-blur-sm rounded-3xl border border-brand-dark/10 hover:shadow-2xl transition duration-300 flex flex-col h-full overflow-hidden group hover:bg-brand-primary/40">
+                    <div class="w-full aspect-video relative overflow-hidden bg-black">
+                        <video src="/video/Lukasuvodni.mp4" autoplay loop muted playsinline class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 opacity-80 group-hover:opacity-100"></video>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <span class="text-xs font-bold uppercase tracking-widest text-brand-dark mb-2">Brand Kampaň</span>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Liptovský Mikuláš</h3>
+                        <p class="text-brand-dark/80 text-sm leading-relaxed flex-grow">
+                            Vizuál, který odráží ambice. Komplexní outdoor kampaň pro město (oslava Liptovské Mary) zahrnující filmový storytelling, fpv drony a sledování rekordu v Himalájích.
+                        </p>
+                        <div class="pt-5 mt-5 border-t border-brand-dark/10 flex items-center justify-between text-brand-dark font-bold text-sm group-hover:text-brand-secondary transition">
+                            <span>Zobrazit Case Study</span>
+                            <span class="group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                    </div>
+                </a>
 
-                <div class="bg-brand-primary text-white p-10 rounded-3xl shadow-2xl relative overflow-hidden group flex flex-col transform md:scale-110 md:-translate-y-2 z-10 order-1 md:order-2">
-                    <div class="absolute top-0 right-0 bg-brand-dark text-white text-xs font-bold px-4 py-2 rounded-bl-xl uppercase tracking-wider">Top Choice</div>
+                <!-- 4. Kód Midlife -->
+                <a href="/kodmidlife.html" class="bg-brand-primary/30 backdrop-blur-sm rounded-3xl border border-brand-dark/10 hover:shadow-2xl transition duration-300 flex flex-col h-full overflow-hidden group hover:bg-brand-primary/40">
+                    <div class="w-full aspect-video relative overflow-hidden bg-black">
+                        <video src="/video/Podcast%201%20lb.mp4" autoplay loop muted playsinline class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 opacity-80 group-hover:opacity-100"></video>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <span class="text-xs font-bold uppercase tracking-widest text-brand-dark mb-2">B2B Podcast & Vodcast</span>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Kód Midlife</h3>
+                        <p class="text-brand-dark/80 text-sm leading-relaxed flex-grow">
+                            Edukace a uklidnění pro ženy procházející menopauzou. Kompletní produkce vodcastu od profi studiového nasvícení přes práci s hosty ze zdravotnických oborů až po čistý zvuk a postprodukci.
+                        </p>
+                        <div class="pt-5 mt-5 border-t border-brand-dark/10 flex items-center justify-between text-brand-dark font-bold text-sm group-hover:text-brand-secondary transition">
+                            <span>Zobrazit Case Study</span>
+                            <span class="group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                    </div>
+                </a>
 
-                    <div class="mb-6 text-6xl">🚀</div>
-                    <h3 class="text-3xl font-bold mb-3">Personal Brand</h3>
-                    <p class="text-white/80 text-sm mb-8 leading-relaxed">
-                        Dominujte na Instagramu. Pro obchodníky, markeťáky a mentory, kteří chtějí budovat autoritu.
-                    </p>
+                <!-- 5. Startup Night -->
+                <a href="/eventy.html" class="bg-brand-primary/30 backdrop-blur-sm rounded-3xl border border-brand-dark/10 hover:shadow-2xl transition duration-300 flex flex-col h-full overflow-hidden group hover:bg-brand-primary/40">
+                    <div class="w-full aspect-video relative overflow-hidden bg-black">
+                        <video src="/video/maturakhighlights.mp4" autoplay loop muted playsinline class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 opacity-80 group-hover:opacity-100"></video>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <span class="text-xs font-bold uppercase tracking-widest text-brand-dark mb-2">Firemní Eventy</span>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Startup Night</h3>
+                        <p class="text-brand-dark/80 text-sm leading-relaxed flex-grow">
+                            Dynamické aftermovie pro velký B2B networking. Vizuál, který okamžitě prodá atmosféru z akce a zásadně zjednoduší konverzi při prodeji lístků na další ročník.
+                        </p>
+                        <div class="pt-5 mt-5 border-t border-brand-dark/10 flex items-center justify-between text-brand-dark font-bold text-sm group-hover:text-brand-secondary transition">
+                            <span>Zobrazit Case Study</span>
+                            <span class="group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                    </div>
+                </a>
 
-                    <ul class="space-y-5 mb-10 font-medium text-lg flex-grow">
-                        <li class="flex gap-3 items-start"><span class="mt-1">📱</span> <span><strong>Instagram Growth:</strong> Strategie na míru.</span></li>
-                        <li class="flex gap-3 items-start"><span class="mt-1">🎥</span> <span><strong>Reels Produkce:</strong> Natáčení + Střih + Post.</span></li>
-                        <li class="flex gap-3 items-start"><span class="mt-1">🧠</span> <span><strong>Content Management:</strong> Vy točíte byznys, my řešíme sítě.</span></li>
-                    </ul>
+                <!-- 6. Financovinky -->
+                <a href="/financovinky.html" class="bg-brand-primary/30 backdrop-blur-sm rounded-3xl border border-brand-dark/10 hover:shadow-2xl transition duration-300 flex flex-col h-full overflow-hidden group hover:bg-brand-primary/40">
+                    <div class="w-full aspect-video relative overflow-hidden bg-black">
+                        <video src="/video/filipuvodni.mp4" autoplay loop muted playsinline class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 opacity-80 group-hover:opacity-100"></video>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <span class="text-xs font-bold uppercase tracking-widest text-brand-dark mb-2">Edukace & Konverze</span>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Financovinky</h3>
+                        <p class="text-brand-dark/80 text-sm leading-relaxed flex-grow">
+                            Udržení pozornosti v segmentu, kde to ostatní neumí. Tvorba short-form formátů, které vygenerovaly organický dosah přes 280 000 zhlédnutí a zvýšily konverze.
+                        </p>
+                        <div class="pt-5 mt-5 border-t border-brand-dark/10 flex items-center justify-between text-brand-dark font-bold text-sm group-hover:text-brand-secondary transition">
+                            <span>Zobrazit Case Study</span>
+                            <span class="group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                    </div>
+                </a>
 
-                    <a href="#kontakt" class="block text-center py-4 rounded-xl bg-brand-dark text-white font-bold hover:bg-white hover:text-brand-dark transition shadow-lg mt-auto text-lg">
-                        Chci být vidět
-                    </a>
-                </div>
-
-                <div class="bg-brand-bg/90 backdrop-blur-sm p-8 rounded-3xl border border-brand-primary/10 hover:shadow-xl transition duration-300 flex flex-col h-full order-3 md:order-3">
-                    <div class="mb-6 text-5xl">🏔️</div>
-                    <h3 class="text-2xl font-bold text-zinc-900 mb-3">Travel & Destination</h3>
-                    <p class="text-gray-500 text-sm mb-8 leading-relaxed">
-                        Ukažte světu krásu vašeho místa. Vizuální storytelling, který v divákovi probudí touhu sbalit kufry.
-                    </p>
-
-                    <ul class="space-y-4 mb-8 text-gray-700 font-medium text-sm flex-grow">
-                        <li class="flex gap-3">🚁 <span><strong>Cinematic Promo:</strong> Dron & FPV záběry.</span></li>
-                        <li class="flex gap-3">🏨 <span><strong>Hotely & Regiony:</strong> Prodejte zážitek, ne jen pokoj.</span></li>
-                        <li class="flex gap-3">🌍 <span><strong>Liptov Style:</strong> Autentické a velkolepé.</span></li>
-                    </ul>
-
-                    <a href="#kontakt" class="block text-center py-3 rounded-xl border-2 border-brand-primary text-brand-primary font-bold hover:bg-brand-primary hover:text-white transition mt-auto">
-                        Poptat Promo
-                    </a>
-                </div>
-
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="#kontakt" class="inline-block px-8 py-4 bg-brand-dark text-brand-bg font-bold rounded-xl hover:bg-brand-secondary transition shadow-lg transform hover:-translate-y-1 active:scale-95 duration-200">
+                    Domluvte si konzultaci (30 min)
+                </a>
             </div>
         </div>
     </section>
 
     <section id="proces" class="py-20 bg-brand-bg relative overflow-hidden">
-        <svg class="absolute left-0 top-1/3 w-full h-auto text-brand-primary/5 pointer-events-none -z-10 transform scale-150" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <svg class="absolute left-0 top-1/3 w-full h-auto text-brand-primary/20 pointer-events-none -z-10 transform scale-150" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 
         <div class="max-w-7xl mx-auto px-4 relative z-10">
             <div class="text-center mb-16">
-                <h2 class="text-5xl font-bold text-zinc-900">Proces <span class="font-script text-brand-primary text-6xl font-bold">spolupráce</span></h2>
-                <p class="text-gray-500 mt-2">Jednoduchý, efektivní, bez zbytečných callů.</p>
+                <h2 class="text-5xl font-bold text-brand-dark">Proces <span class="font-script text-brand-primary text-6xl font-bold">spolupráce</span></h2>
+                <p class="text-brand-dark/80 mt-2 font-medium">Spolehlivý, predikovatelný, zaměřený na úsporu vašeho času.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center relative group border border-white">
-                    <div class="text-6xl font-black text-brand-primary/20 absolute top-2 right-4 group-hover:text-brand-primary/10 transition">1</div>
-                    <div class="text-xl font-bold text-zinc-900 mb-2 mt-4">Call / Kafe</div>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Probereme váš cíl, budget a termíny. Pokud si sedneme, jdeme na to.
+                <!-- Vyměněno za bg-brand-primary/30 pro sjednocení barev -->
+                <div class="bg-brand-primary/30 backdrop-blur-sm p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center relative group border border-brand-dark/10">
+                    <div class="text-6xl font-black text-brand-dark/10 absolute top-2 right-4 group-hover:text-brand-dark/20 transition">1</div>
+                    <div class="text-xl font-bold text-brand-dark mb-2 mt-4">Discovery Call</div>
+                    <p class="text-sm text-brand-dark/80 leading-relaxed">
+                        Zjistíme, jestli si sedneme byznysově i lidsky. Nastavíme jasná očekávání, cíle a parametry projektu.
                     </p>
                 </div>
 
-                <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center relative group border border-white">
-                    <div class="text-6xl font-black text-brand-primary/20 absolute top-2 right-4 group-hover:text-brand-primary/10 transition">2</div>
-                    <div class="text-xl font-bold text-zinc-900 mb-2 mt-4">Natáčení</div>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Přijedeme, nastavíme světla, kamery, akce. My točíme, vy děláte svůj byznys.
+                <div class="bg-brand-primary/30 backdrop-blur-sm p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center relative group border border-brand-dark/10">
+                    <div class="text-6xl font-black text-brand-dark/10 absolute top-2 right-4 group-hover:text-brand-dark/20 transition">2</div>
+                    <div class="text-xl font-bold text-brand-dark mb-2 mt-4">Natáčení</div>
+                    <p class="text-sm text-brand-dark/80 leading-relaxed">
+                        My připravíme techniku, nasvícení i scénář. Vy jen předáte své know-how. Šetříme váš drahocenný čas.
                     </p>
                 </div>
 
-                <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center relative group border border-white">
-                    <div class="text-6xl font-black text-brand-primary/20 absolute top-2 right-4 group-hover:text-brand-primary/10 transition">3</div>
-                    <div class="text-xl font-bold text-zinc-900 mb-2 mt-4">Postprodukce</div>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Střih, barvy, sound design. Tady vzniká ta magie, která prodává.
+                <div class="bg-brand-primary/30 backdrop-blur-sm p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center relative group border border-brand-dark/10">
+                    <div class="text-6xl font-black text-brand-dark/10 absolute top-2 right-4 group-hover:text-brand-dark/20 transition">3</div>
+                    <div class="text-xl font-bold text-brand-dark mb-2 mt-4">Postprodukce</div>
+                    <p class="text-sm text-brand-dark/80 leading-relaxed">
+                        Precizní střih, barvy a sound design. Tady pod našima rukama vzniká čistý vizuál, který vás bude hrdě reprezentovat.
                     </p>
                 </div>
 
-                <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center relative group border border-white">
-                    <div class="text-6xl font-black text-brand-primary/20 absolute top-2 right-4 group-hover:text-brand-primary/10 transition">4</div>
-                    <div class="text-xl font-bold text-zinc-900 mb-2 mt-4">Výsledek</div>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Dodáme videa ve formátech pro IG/TikTok i Web. Ready to post.
+                <div class="bg-brand-primary/30 backdrop-blur-sm p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center relative group border border-brand-dark/10">
+                    <div class="text-6xl font-black text-brand-dark/10 absolute top-2 right-4 group-hover:text-brand-dark/20 transition">4</div>
+                    <div class="text-xl font-bold text-brand-dark mb-2 mt-4">Hotové aktivum</div>
+                    <p class="text-sm text-brand-dark/80 leading-relaxed">
+                        Dostanete finální výstupy optimalizované přímo pro vaše platformy. Vše připraveno. Ready to post.
                     </p>
                 </div>
             </div>
@@ -279,37 +247,43 @@
 
     <section id="tym" class="py-24 px-4 max-w-5xl mx-auto relative overflow-visible">
         <div class="text-center mb-16 relative">
-            <h2 class="text-5xl font-bold text-zinc-900 relative inline-block z-10">
-                Kdo <span class="font-script text-brand-primary text-6xl font-bold">jsme?</span>
-                <svg class="absolute w-full h-12 -bottom-4 left-0 text-brand-primary/30 -z-10" viewBox="0 0 200 9" xmlns="http://www.w3.org/2000/svg">
+            <h2 class="text-5xl font-bold text-brand-dark relative inline-block z-10">
+                Kdo <span class="font-script text-brand-primary text-6xl font-bold">jsem?</span>
+                <svg class="absolute w-full h-12 -bottom-4 left-0 text-brand-primary/40 -z-10" viewBox="0 0 200 9" xmlns="http://www.w3.org/2000/svg">
                     <path fill="currentColor" d="M2.1 2.9 c4.5 -2.3 22.1 -2.9 33.3 -1.8 c28.4 2.8 112.9 5.8 160.7 2.6 c1.7 -0.1 3.5 -0.3 3.6 -0.5 c0.3 -0.5 -1.1 -0.9 -2.7 -1.2 c-25.1 -4.1 -116.3 -2.6 -161.4 1.4 c-9.9 0.9 -29.2 2.6 -32.8 4.2 c-0.6 0.3 -0.6 0.5 -0.2 0.7 c0.3 0.2 0.7 -0.2 1.5 -1.4 z"/>
                 </svg>
             </h2>
         </div>
 
         <div class="flex flex-col md:flex-row items-center gap-12 mb-20 relative">
-            <svg class="absolute -left-20 -top-20 w-[500px] h-[500px] text-brand-primary/10 transform rotate-90 pointer-events-none -z-10" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <svg class="absolute -left-20 -top-20 w-[500px] h-[500px] text-brand-dark/10 transform rotate-90 pointer-events-none -z-10" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" d="M44.7,-76.4C58.9,-69.2,71.8,-59.1,79.6,-46.3C87.4,-33.5,90.1,-18,87.6,-3.3C85.1,11.4,77.4,25.3,68.2,37.6C59,49.9,48.3,60.6,35.9,67.3C23.5,74,9.4,76.7,-3.6,73.1C-16.6,69.5,-28.5,59.6,-39.8,49.7C-51.1,39.8,-61.8,29.9,-68.8,17.4C-75.8,4.9,-79.1,-10.2,-74.6,-23.4C-70.1,-36.6,-57.8,-47.9,-45.3,-55.8C-32.8,-63.7,-20.1,-68.2,-6.1,-67.2C7.9,-66.2,22,-79.8,30.5,-83.6L44.7,-76.4Z" transform="translate(100 100)" />
             </svg>
 
-            <div class="w-full md:w-1/2 aspect-square rounded-3xl overflow-hidden shadow-xl border-4 border-white transform hover:rotate-1 transition duration-500 relative z-10">
+            <div class="w-full md:w-1/2 aspect-square rounded-3xl overflow-hidden shadow-xl border-4 border-brand-bg transform hover:rotate-1 transition duration-500 relative z-10">
                 <img src="/img/Navrh-bez-nazvu-1.png" alt="Adrian Schram" class="w-full h-full object-cover">
             </div>
             <div class="w-full md:w-1/2 text-center md:text-left relative z-10">
-                <h3 class="text-4xl font-bold text-zinc-900 mb-1">Adrian <span class="font-script text-brand-primary font-bold">Schram</span></h3>
-                <p class="text-brand-primary font-bold uppercase tracking-widest text-xs mb-6">Zakladatel MotionFlow</p>
-                <p class="text-gray-600 leading-relaxed text-lg">
-                    Adrian je vizionář, který pro dokonalý záběr vyleze i na šestitisícovku.
-                    Garantuje, že vaše video bude mít světový "cinematic" look a odliší se od tuctové konkurence na první pohled.
-                </p>
+                <h3 class="text-4xl font-bold text-brand-dark mb-1">Adrian <span class="font-script text-brand-primary font-bold">Schram</span></h3>
+                <p class="text-brand-dark font-bold uppercase tracking-widest text-xs mb-6 opacity-70">Video Producent & Zakladatel</p>
+                <div class="space-y-4 text-brand-dark/80 leading-relaxed text-lg">
+                    <p>
+                        Nejsem jen kluk s kamerou. Do byznysu a na natáčecí plac přenáším stejné principy, jaké mě naučily výstupy na pětitisícovky – <strong>disciplínu, nekompromisní přípravu a řešení krizí s chladnou hlavou.</strong>
+                    </p>
+                    <p>
+                        Produkce pro B2B lídry vyžaduje partnera s obrovským drivem. Vím, že vaše firma potřebuje funkční proces a klid. Spolehlivost a dodání v termínu pro mě nejsou benefity, ale naprostý standard.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
+    
     <footer id="global-footer" class="w-full m-0 p-0">
     </footer>
 
+    <!-- POZOR: Parametr ?v=2 zaručí, že se footer načte opravdu nový a zruší se bílé pozadí -->
     <script>
-        fetch('/footer.txt')
+        fetch('/footer.txt?v=2')
             .then(res => res.text())
             .then(data => {
                 document.getElementById('global-footer').innerHTML = data;

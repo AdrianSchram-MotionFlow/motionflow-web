@@ -1,19 +1,22 @@
-<footer id="kontakt" class="bg-brand-primary text-white py-20 px-4 mt-20">
+<footer id="kontakt" class="bg-brand-dark text-white py-20 px-4 mt-20">
     <div class="max-w-6xl mx-auto text-center relative z-10">
-        <h2 class="text-4xl md:text-6xl font-bold mb-8">Napiš nám a společně <br>vytvoříme <span class="font-script text-zinc-900 block md:inline mt-2 font-bold drop-shadow-md">Masterpiece!</span></h2>
+        <!-- Masterpiece je teď inline, takže se nezalomí na nový řádek -->
+        <h2 class="text-4xl md:text-6xl font-bold mb-8">Spojte se s námi a společně vytvoříme <span class="font-script text-brand-light font-bold drop-shadow-md">Masterpiece!</span></h2>
 
         <div class="mt-12 flex justify-center">
-            <div class="bg-white/10 backdrop-blur-sm p-8 rounded-3xl flex flex-col xl:flex-row items-center gap-6 border border-white/20 hover:bg-white/15 transition max-w-2xl w-full">
-                <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg shrink-0">
-                    <img src="/img/personal%20brand%20pfp.png" alt="Adrian Schram" class="w-full h-full object-cover">
+            <!-- Tady je ten bílý čtvereček s černým textem uvnitř tmavého footeru -->
+            <div class="bg-white p-8 rounded-3xl flex flex-col xl:flex-row items-center gap-6 shadow-2xl max-w-2xl w-full">
+                <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-brand-light shadow-lg shrink-0">
+                    <img src="/img/Navrh-bez-nazvu-1.png" alt="Adrian Schram" class="w-full h-full object-cover">
                 </div>
                 <div class="text-center xl:text-left">
-                    <h3 class="text-2xl font-bold mb-1">Adrian Schram</h3>
-                    <p class="text-[10px] md:text-xs font-black uppercase tracking-widest text-zinc-900 bg-white/30 inline-block px-3 py-1 rounded-full mb-4">Video Strategie & Produkce</p>
-                    <div class="flex flex-col gap-2 text-md">
-                        <a href="tel:+420776898960" class="hover:text-zinc-900 transition font-semibold">📞 +420 776 898 960</a>
-                        <a href="mailto:adrian@motionflow.cz" class="hover:text-zinc-900 transition">✉️ adrian@motionflow.cz</a>
-                        <a href="https://instagram.com/adrian.schram" target="_blank" class="hover:text-zinc-900 transition">📸 @adrian.schram</a>
+                    <!-- Texty uvnitř jsou tmavé (zinc-900) -->
+                    <h3 class="text-2xl font-bold mb-1 text-zinc-900">Adrian Schram</h3>
+                    <p class="text-[10px] md:text-xs font-black uppercase tracking-widest text-brand-dark bg-brand-light/30 inline-block px-3 py-1 rounded-full mb-4">Video Producent & Zakladatel</p>
+                    <div class="flex flex-col gap-2 text-md text-zinc-600">
+                        <a href="tel:+420776898960" class="hover:text-brand-primary transition font-semibold">📞 +420 776 898 960</a>
+                        <a href="mailto:adrian@motionflow.cz" class="hover:text-brand-primary transition">✉️ adrian@motionflow.cz</a>
+                        <a href="https://instagram.com/adrian.schram" target="_blank" class="hover:text-brand-primary transition">📸 @adrian.schram</a>
                     </div>
                 </div>
             </div>
