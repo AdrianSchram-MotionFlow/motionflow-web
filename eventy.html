@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs" class="scroll-smooth">
+<html lang="cs" class="scroll-smooth h-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,66 +8,129 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #FBF9F6; }
+        ::-webkit-scrollbar-thumb { background: #D1DDD1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #A8BFA8; }
+    </style>
 </head>
-<body class="bg-white text-zinc-900 font-sans antialiased selection:bg-brand-light selection:text-white">
+<body class="bg-brand-bg text-brand-dark font-sans antialiased selection:bg-brand-primary selection:text-brand-dark overflow-x-hidden">
 
-<nav class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-zinc-100 transition-all duration-300">
+<nav class="fixed top-0 left-0 w-full z-50 bg-brand-bg/90 backdrop-blur-md border-b border-brand-dark/10 transition-all duration-300">
     <div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
-        <a href="index.html" class="hover:opacity-80 transition block w-32 md:w-40">
+        <a href="/index.html" class="hover:opacity-80 transition block w-32 md:w-40">
             <img src="/img/MotionFlowNew_nobg.png" alt="MotionFlow Logo" class="w-full h-auto">
         </a>
         <div class="hidden md:flex items-center gap-8 font-semibold text-sm tracking-wide">
-            <a href="index.html#reference" class="hover:text-brand-primary transition">Reference</a>
-            <a href="index.html#balicky" class="hover:text-brand-primary transition">Balíčky</a>
-            <a href="#kontakt" class="bg-brand-dark text-white px-6 py-3 rounded-lg hover:bg-brand-primary transition shadow-lg">Napiš Nám!</a>
+            <a href="/index.html#case-studies" class="text-brand-dark hover:text-brand-primary transition">Case Studies</a>
+            <a href="/index.html#proces" class="text-brand-dark hover:text-brand-primary transition">Proces</a>
+            <a href="#kontakt" class="bg-brand-dark text-brand-bg px-6 py-3 rounded-lg hover:bg-brand-secondary transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-300">
+                Domluvte si konzultaci (30 min)
+            </a>
         </div>
     </div>
 </nav>
 
 <main class="pt-40 overflow-hidden">
-    <div class="fixed top-0 left-0 w-[800px] h-[800px] bg-brand-bg rounded-full blur-3xl -z-10 -translate-x-1/2 -translate-y-1/2 opacity-60"></div>
+    <div class="fixed top-0 left-0 w-[800px] h-[800px] bg-brand-primary/10 rounded-full blur-[100px] -z-10 -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="fixed bottom-0 right-0 w-[600px] h-[600px] bg-brand-primary/10 rounded-full blur-[100px] -z-10 translate-x-1/3 translate-y-1/3"></div>
 
     <header class="text-center mb-24 px-4">
-        <h1 class="text-5xl md:text-8xl font-bold leading-tight text-zinc-900">
-            Live <span class="font-script text-brand-primary text-6xl md:text-9xl block mt-2">Events</span>
+        <h1 class="text-5xl md:text-8xl font-black leading-tight text-brand-dark">
+            Live <span class="font-script text-brand-primary text-6xl md:text-9xl block mt-2 drop-shadow-sm">Events</span>
         </h1>
-        <p class="text-xl text-zinc-500 max-w-2xl mx-auto font-light mt-6">
+        <p class="text-xl text-brand-dark/80 max-w-2xl mx-auto font-medium mt-6">
             Nudný záznam z kamery v rohu? Zapomeňte. Zachytíme atmosféru vaší konference nebo firemní akce tak, aby prodala další ročník.
         </p>
     </header>
 
-    <section class="max-w-6xl mx-auto px-6 mb-32">
+    <!-- Sekce 1: Spolupracujeme -->
+    <section class="max-w-7xl mx-auto px-6 mb-32">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <span class="text-brand-primary font-bold tracking-widest text-xs uppercase">B2B Event</span>
-                <h2 class="text-4xl md:text-5xl font-bold text-zinc-900">Startup Night</h2>
-                <p class="text-lg text-zinc-600 leading-relaxed font-light">
-                    Dynamický sestřih z večera plného pitchů a networkingu. Nešlo nám jen o záznam toho, kdo mluvil, ale o zachycení vizionářské energie v místnosti. Zásadní asset pro získávání sponzorů a investorů na další ročníky.
-                </p>
-                <div class="flex flex-wrap gap-4 pt-2 font-medium text-zinc-500">
-                    <span class="bg-zinc-50 px-4 py-2 rounded-xl border border-zinc-100 shadow-sm">✓ Rychlý střih</span>
-                    <span class="bg-zinc-50 px-4 py-2 rounded-xl border border-zinc-100 shadow-sm">✓ Záznam Keynotes</span>
-                    <span class="bg-zinc-50 px-4 py-2 rounded-xl border border-zinc-100 shadow-sm">✓ Networking Vibe</span>
+            
+            <!-- Obrázek Spolupracujeme (Zleva) -->
+            <div class="flex justify-center lg:justify-end w-full lg:ml-auto">
+                <div class="relative w-full max-w-[450px] group">
+                    <!-- Plovoucí zelený obdélník -->
+                    <div class="absolute -inset-4 bg-brand-primary/20 rounded-[2.5rem] -z-10 -rotate-2 group-hover:-rotate-1 transition duration-500 w-full h-full"></div>
+
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-brand-bg transform rotate-1 group-hover:rotate-0 transition duration-500 bg-white aspect-square flex items-center justify-center p-12">
+                        <img src="/img/spolupracujeme.png" alt="Spolupracujeme Logo" class="w-full h-auto object-contain transform group-hover:scale-105 transition duration-500">
+                    </div>
                 </div>
             </div>
-            <div class="relative group">
-                <div class="absolute -inset-2 bg-brand-bg rounded-3xl -rotate-2 group-hover:rotate-0 transition duration-500 -z-10"></div>
-                <div class="rounded-2xl overflow-hidden shadow-2xl aspect-video bg-black border-4 border-white transform hover:scale-[1.02] transition duration-300">
-                    <video controls src="/video/startupnight.mp4" class="w-full h-full object-cover"></video>
+
+            <!-- Text Spolupracujeme (Zprava) -->
+            <div class="space-y-6 max-w-lg lg:mr-auto">
+                <div class="inline-block px-4 py-1 rounded-full border border-brand-primary text-brand-dark text-xs font-bold tracking-widest uppercase mb-2 bg-brand-primary/10">
+                    Video Partner
+                </div>
+                <h2 class="text-4xl md:text-6xl font-bold text-brand-dark tracking-tight">Spolupracujeme</h2>
+                
+                <div class="space-y-4 text-lg text-brand-dark/80 leading-relaxed">
+                    <p>
+                        Působíme jako kreativní video produkční partner pro dynamickou networkingovou platformu Spolupracujeme.
+                    </p>
+                    <p>
+                        Náš úkol je jasný: Zajistit kompletní natáčení přímo na eventech a dodat profesionální postprodukci. Z akcí nevzniká jen suchý záznam, ale vizuálně atraktivní videa a krátké formáty pro sociální sítě, které komunikují atmosféru a přitahují další účastníky.
+                    </p>
                 </div>
             </div>
+            
+        </div>
+    </section>
+
+    <!-- Sekce 2: Startup Night -->
+    <section class="max-w-7xl mx-auto px-6 mb-32">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Text Startup Night (Zleva) -->
+            <div class="space-y-6 max-w-lg lg:ml-auto order-2 lg:order-1">
+                <div class="inline-block px-4 py-1 rounded-full border border-brand-primary text-brand-dark text-xs font-bold tracking-widest uppercase mb-2 bg-brand-primary/10">
+                    B2B Event
+                </div>
+                <h2 class="text-4xl md:text-6xl font-bold text-brand-dark tracking-tight">Startup Night</h2>
+                
+                <div class="space-y-4 text-lg text-brand-dark/80 leading-relaxed">
+                    <p>
+                        Dynamický sestřih z večera plného pitchů a networkingu. Nešlo nám jen o statické zachycení toho, kdo mluvil na pódiu, ale o vizualizaci vizionářské energie v celé místnosti.
+                    </p>
+                    <p>
+                        Výsledné video tak dnes slouží jako zásadní vizuální aktivum pro organizátory. Skvělý nástroj pro prodej lístků, budování brandu a získávání partnerů i investorů pro další ročníky.
+                    </p>
+                </div>
+                
+                <div class="flex flex-wrap gap-4 pt-4 font-bold text-brand-dark/70 text-sm">
+                    <span class="bg-brand-primary/10 px-4 py-2 rounded-xl border border-brand-primary/20">✓ Rychlý střih</span>
+                    <span class="bg-brand-primary/10 px-4 py-2 rounded-xl border border-brand-primary/20">✓ Záznam Keynotes</span>
+                    <span class="bg-brand-primary/10 px-4 py-2 rounded-xl border border-brand-primary/20">✓ Networking Vibe</span>
+                </div>
+            </div>
+
+            <!-- Video Startup Night (Zprava) -->
+            <div class="flex justify-center lg:justify-start lg:mr-auto w-full order-1 lg:order-2">
+                <div class="relative w-full max-w-[600px] group">
+                    <!-- Plovoucí zelený obdélník -->
+                    <div class="absolute -inset-4 bg-brand-primary/20 rounded-[2.5rem] -z-10 rotate-2 group-hover:rotate-1 transition duration-500 w-full h-full"></div>
+
+                    <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-brand-bg transform -rotate-1 group-hover:rotate-0 transition duration-500 bg-brand-dark aspect-video relative z-0">
+                        <video controls src="/video/startupnight.mp4" class="w-full h-full object-cover"></video>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
 </main>
 
-<footer id="global-footer" class="w-full m-0 p-0 -mt-20 relative z-10">
+<footer id="global-footer" class="w-full m-0 p-0 relative z-10">
 </footer>
 
 <script>
-    fetch('/footer.txt')
+    fetch('/footer.txt?v=3')
         .then(res => res.text())
         .then(data => {
             document.getElementById('global-footer').innerHTML = data;
